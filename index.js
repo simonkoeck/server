@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////
-//                          IMPORTS                            //
+//                          IMPORT                            //
 /////////////////////////////////////////////////////////////////
 
 const io = require('socket.io')(5556);
@@ -57,6 +57,7 @@ io.on('connect', socket => { //On any socket connection
 
   socket.on('delete', (data) => { // On (PC) disconnect (Called on window close)
     deleteCode(data); //Call disconnect function
+    
   });
 });
 
